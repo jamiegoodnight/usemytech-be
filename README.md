@@ -8,7 +8,7 @@
 
 ![Use My Tech Stuff](https://i.imgur.com/jMhkryZ.png)
 
-> Node server with an Express framework for Use My Tech Stuff—an app for sharing and lending tech!
+> Node server with an Express framework for Use My Tech Stuff—an application for sharing and lending tech!
 
 ## Install
 
