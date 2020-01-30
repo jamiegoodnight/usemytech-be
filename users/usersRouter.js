@@ -1,7 +1,6 @@
 const express = require("express");
 
 const db = require("./usersModel");
-// const restricted = require("../authorization/restricted");
 
 const router = express.Router();
 
