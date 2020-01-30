@@ -12,21 +12,6 @@ cloudinaryConfig(router);
 
 // GET a list of tech objects ----------
 
-// router.get("/", (req, res) => {
-//   db.get()
-//     .then(tech => {
-//       const techCom = tech.map(t => {
-//         db.getTechComments(t.id);
-//       });
-
-//       res.status(200).json(techCom);
-//     })
-//     .catch(err => {
-//       res.status(500).json(console.log(err));
-//       //   { message: "The tech could not be retrieved!" }
-//     });
-// });
-
 router.get("/", (req, res) => {
   db.get()
     .then(tech => {
@@ -52,7 +37,6 @@ router.get("/:id", (req, res) => {
           techWithCom.comments = comments;
           res.status(200).json(techWithCom);
         });
-        // res.status(200).json(tech);
       } else {
         res.status(404).json({
           message: "The tech with the specified id could not be found!"
@@ -137,7 +121,6 @@ router.put("/:id", restricted, async (req, res) => {
       })
       .catch(err => {
         res.status(500).json(console.log(err));
-        //   { message: "The tech information could not be modified!" }
       });
   } else {
     res.status(400).json({ message: "Please provide updates for this tech!" });

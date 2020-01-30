@@ -23,7 +23,6 @@ router.post("/register", (req, res) => {
       })
       .catch(err => {
         res.status(500).json(console.log(err));
-        //   .json({ message: "There was a problem saving this user!" });
       });
   } else {
     res.status(401).json({

@@ -26,19 +26,6 @@ function get() {
     });
 }
 
-// "tech.user_id", "users.id", )
-// .select({
-//   name: "tech.name",
-//   user: "users.username",
-//   user_id: "tech.user_id",
-//   category: "tech.category",
-//   description: "tech.description",
-//   cost: "tech.cost",
-//   availability: "tech.availability",
-//   picture: "tech.picture",
-//   id: "tech.id"
-// });
-
 function insert(tech) {
   return db("tech")
     .insert(tech)

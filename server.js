@@ -7,7 +7,6 @@ const server = express();
 const authRouter = require("./authorization/authRouter");
 const techRouter = require("./tech/techRouter");
 const usersRouter = require("./users/usersRouter");
-// const { restricted } = require("./authorization/restricted");
 
 server.use(express.json());
 server.use(helmet());
