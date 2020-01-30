@@ -8,7 +8,7 @@ const router = express.Router();
 
 const secret = require("./kruptos").jwtKey;
 
-// Register
+//POST for register
 
 router.post("/register", (req, res) => {
   const user = req.body;
@@ -32,7 +32,7 @@ router.post("/register", (req, res) => {
   }
 });
 
-// Login
+//POST for login
 
 router.post("/login", (req, res) => {
   const { username, password } = req.body;
@@ -63,7 +63,7 @@ router.post("/login", (req, res) => {
   }
 });
 
-// Token generator
+// Token generator for login
 
 function generateToken(user) {
   const payload = {
