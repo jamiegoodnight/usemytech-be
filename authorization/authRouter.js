@@ -63,7 +63,7 @@ router.post("/login", (req, res) => {
   }
 });
 
-// Token generator for login
+// Jwt generator for login
 
 function generateToken(user) {
   const payload = {
