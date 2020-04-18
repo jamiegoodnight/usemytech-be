@@ -14,3 +14,5 @@ module.exports = {
 
   uploader
 };
+
+// Cloudinary was included to test image uploading, it is integrated with tech routes and models.
