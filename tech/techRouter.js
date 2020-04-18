@@ -15,12 +15,10 @@ cloudinaryConfig(router);
 router.get("/", (req, res) => {
   db.get()
     .then(tech => {
-      //   console.log(res);
       res.status(200).json(tech);
     })
     .catch(err => {
       res.status(500).json(console.log(err));
-      //   { message: "The tech could not be retrieved!" }
     });
 });
 
