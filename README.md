@@ -80,9 +80,9 @@ Example of what to use:
 
 ```
 {
-    username: "Lambda",
+    username: "tester",
     password: "testpassword",
-    email: "lambda@lambda.com"
+    email: "tester@testing.com"
 }
 ```
 
